@@ -42,7 +42,7 @@ body {
 .logo-header {
     font-family: "Meow Script", sans-serif;
     font-size: 3.8rem;
-    color:var(--color-logo);
+    color:var(--color-nav-bar);
 }  
 .nav-bar {
     width: 50%;
