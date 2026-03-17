@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-logo:#fffdfd;
+    --color-nav-bar:#00ffff;
+    --color-btn:#06e2e2;
+    --color-btnActive:#07d8d8;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.2%;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    background-image: url(Imagens/pexels-pixabay-50987.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.site-header {
+    width: 100%;
+    padding: 1.0rem;
+}
+
+.header-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header {
+    font-family: "Meow Script", sans-serif;
+    font-size: 3.8rem;
+    color:var(--color-logo);
+}  
+.nav-bar {
+    width: 50%;
+    display: flex;
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-bar a {
+    color: var(--color-logo);
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 0.6rem;    
+    transition-property: padding 0 0 0 1rem;
+    transition-duration: 0.5s;
+}
+
+.nav-bar a:hover {
+    border-bottom:2px solid var(--color-nav-bar);
+    font-size: 1.8rem;
+}
+
+.active {
+    border-bottom: 2px solid var(--color-nav-bar);
+}
+
+.section {
+    padding: 15rem 30rem;
+}
+
+.txt {
+    color: var(--color-logo);
+    font-size: 8rem;
+    text-align: left;
+    width: 50%;
+}
+
+.btn {
+    background-color: var(--color-btn);
+    font-size: 2.6rem;
+    padding: 1.2rem 8rem;
+    color: var(--color-logo);
+    font-weight: bolder;
+    border: none;
+    border-radius: 15px;
+    margin-top: 2.5rem;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    background-color: var(--color-btnActive);
+    padding: 1.4rem 10rem;
+    cursor: pointer;
+}
